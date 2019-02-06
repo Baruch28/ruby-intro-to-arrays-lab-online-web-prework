@@ -1,19 +1,10 @@
 
-do my_new_array = [1, 2, 3]
-end
-
-it "returns an array that is empty" do
-  size = @my_new_array.size
-  expect(size).to eq(0)
-end
 my_new_array []
 end
 
-describe "#array_with_two_elements" do
-before(:each) do
-  @my_two_array = array_with_two_elements
-end
+
 my_two_array = ["hello", "goodbye"]
+end
 
 it "creates a new array with two elements in it and returns that array" do
   expect(@my_two_array).to be_an(Array)
