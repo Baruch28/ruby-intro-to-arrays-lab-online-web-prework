@@ -1,32 +1,24 @@
-
+do
 my_new_array []
 end
 
-
+do
 my_two_array = ["hello", "goodbye"]
 end
 
+do
   my_two_array[1..2]
 end
 
-it "returns an array that has 2 objects in it" do
-  size = @my_two_array.size
-  expect(size).to eq(2)
+do
   my_two_array(2)
 end
 end
 end
 
-context 'indexing' do
-before(:each) do
-@taylor_swift = ["Welcome to New York", "Blank Space", "Style", "Out of The Woods"]
-end
 
-describe "#first_element" do
-it "takes in an argument of an array and returns the first element in the array using its positive index" do
-  my_first_element = first_element(@taylor_swift)
-  expect(my_first_element).to eq("Welcome to New York")
-end
+
+do
 taylor_swift{ x -> 0}
 end
 
