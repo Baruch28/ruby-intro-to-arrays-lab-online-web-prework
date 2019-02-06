@@ -23,6 +23,7 @@ end
 it "returns an array that has 2 objects in it" do
   size = @my_two_array.size
   expect(size).to eq(2)
+  my_two_array(2)
 end
 end
 end
@@ -37,6 +38,7 @@ it "takes in an argument of an array and returns the first element in the array 
   my_first_element = first_element(@taylor_swift)
   expect(my_first_element).to eq("Welcome to New York")
 end
+taylor_swift{ x -> 0}
 end
 
 describe "#third_element" do
@@ -44,6 +46,7 @@ it "takes in an argument of an array and returns the third element in the array 
   my_third_element = third_element(@taylor_swift)
   expect(my_third_element).to eq("Style")
 end
+taylor_swift[3]
 end
 
 describe "#last_element" do
@@ -52,6 +55,7 @@ it "takes in an argument of an array and returns the last element in the array u
   expect(my_last_element).to eq("Out of The Woods")
 end
 end
+taylor_swift.last
 end
 
 context 'using ruby array methods to return values from an array' do
@@ -64,6 +68,7 @@ it 'takes in an argument of an array and returns the first element in the array,
   first_country = first_element_with_array_methods(@south_east_asia)
   expect(first_country).to eq("Thailand")
 end
+south_east_asia.first
 end
 
 describe "#last_element_with_array_methods" do
@@ -71,6 +76,7 @@ it 'takes in an argument of an array and returns the last element in the array, 
   last_country = last_element_with_array_methods(@south_east_asia)
   expect(last_country).to eq("Myanmar")
 end
+south_east_asia[-1]
 end
 end
 
@@ -83,6 +89,8 @@ describe "#length_of_array" do
 it 'takes in an argrument of an array and returns the length of the array' do
   length = length_of_array(@programming_languages)
   expect(length).to eq(8)
+
+  programming_languages.length
 end
 end
 end
