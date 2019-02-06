@@ -6,8 +6,6 @@ end
 my_two_array = ["hello", "goodbye"]
 end
 
-it "creates a new array with two elements in it and returns that array" do
-  expect(@my_two_array).to be_an(Array)
   my_two_array[1..2]
 end
 
